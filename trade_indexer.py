@@ -46,7 +46,7 @@ class Connection:
         poesessid = "6d0bbe76e3346cb9d44ec81e0ed54b2a"
         response = requests.post('http://www.pathofexile.com/api/trade/search/Crucible',\
                                  headers = {'Content-type': 'application/json', 'Accept': 'text/plain'}, \
-                                 data = ex_to_c, \
+                                 json = ex_to_c, \
                                  cookies = {'POESESSID': poesessid})
         print(response)
 
